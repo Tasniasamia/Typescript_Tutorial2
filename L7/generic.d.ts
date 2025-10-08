@@ -43,4 +43,9 @@ declare class FindClass<T, U, V> {
 declare const findObj: FindClass<string, number, Object>;
 declare function getArry<T>(arr: T[]): void;
 declare function getObject<T>(arr: T): void;
+declare function extemeExample<T extends object, K extends keyof T>(obj: T, key: K): T[K];
+declare const userExmp: {
+    name: string;
+    age: number;
+};
 //# sourceMappingURL=generic.d.ts.map

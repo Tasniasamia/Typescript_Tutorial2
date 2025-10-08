@@ -93,6 +93,15 @@ function getObject(arr) {
 }
 getObject([1, 2, 3, 4]);
 // getObject({ a: 1, b: 2, c: 3, d: 4 });
+//Extreme example
+function extemeExample(obj, key) {
+    return obj[key];
+}
+const userExmp = {
+    name: 'Farhan',
+    age: 12
+};
+console.log(extemeExample(userExmp, "name"));
 //Find Error Not Working
 // const getTecnicValue=<T,U>(x:T,y:U):T+U=>x+y
 // function addService<T,U>(a:T,b:U){

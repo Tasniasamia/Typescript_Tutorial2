@@ -139,7 +139,17 @@ getObject([1,2,3,4])
 
 
 
+//Extreme example
 
+function extemeExample<T extends object,K extends keyof T>(obj:T,key:K):T[K]{
+return obj[key];
+}
+const userExmp={
+    name:'Farhan',
+    age:12
+}
+
+console.log(extemeExample(userExmp,"name"))
 
 
 
